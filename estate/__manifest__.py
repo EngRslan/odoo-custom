@@ -6,6 +6,7 @@
     'summary': 'Track leads and close opportunities',
     'description': "",
     'website': 'https://www.odoo.com/page/raslan',
+    'license': 'LGPL-3',
     'depends': [
         'base_setup'
     ],

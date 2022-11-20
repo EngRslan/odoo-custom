@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<odoo>
+
+
+    <record id="sm_students_treeview" model="ir.ui.view">
+        <field name="name">View Students</field>
+        <field name="model">sm.student</field>
+        <field name="arch" type="xml">
+            <tree string="Student List">
+
+                <field name="image" widget="image" class="o_m2o_avatar"></field>
+                <field name="name"></field>
+                <field name="email"></field>
+                <field name="mobile"></field>
+                <field name="father_name"></field>
+                <field name="father_mobile"></field>
+                <field name="status"></field>
+                <field name="status_id"></field>
+            </tree>
+        </field>
+    </record>
+    <record id="sm_students_formview" model="ir.ui.view">
+        <field name="name">Student</field>
+        <field name="model">sm.student</field>
+        <field name="arch" type="xml">
+            <form string="Student List">
+                <sheet>
+                    <group>
+                            <field name="image" widget="image" class="oe_avatar"></field>
+                    </group>
+                    <group>
+                        
+                        <group>
+                            <field name="name"></field>
+                            <field name="email" widget="E-mail"></field>
+                            <field name="mobile"></field>
+                            <field name="user_id"></field>
+                        </group>
+                        <group>
+                            <field name="father_name"></field>
+                            <field name="father_mobile" widget="Phone"></field>
+                            <field name="status"></field>
+                            <field name="status_id"></field>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Mother Information">
+                            <group>
+                                <group>
+                                    <field name="mother_name"></field>
+                                    <field name="mother_mobile"></field>
+                                </group>
+                                <group>
+                                    <field name="mother_email"></field>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="sm_students_action" model="ir.actions.act_window">
+        <field name="name">Manage Students</field>
+        <field name="res_model">sm.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,11 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="sm_menu_root" name="School Managment">
+        <menuitem id="sm_menu_main" name="Manage Students">
+            <menuitem id="sm_menu_students" action="sm_students_action"></menuitem>
+        </menuitem>
+        <menuitem id="sm_menu_main" name="Settings">
+            <menuitem id="sm_menu_students_status" action="sm_students_status_action"></menuitem>
+        </menuitem>
+    </menuitem>
+</odoo>

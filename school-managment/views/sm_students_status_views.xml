@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="sm_students_status_action" model="ir.actions.act_window">
+        <field name="name">Manage Students Status</field>
+        <field name="res_model">sm.student.status</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>
